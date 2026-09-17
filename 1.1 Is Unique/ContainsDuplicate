@@ -1,0 +1,12 @@
+public class ConatinsDuplicate {
+    public boolean containsDuplicate(int[] nums) {
+        Arrays.sort(nums);
+        boolean repeated = false;
+
+        for(int i = 0; i < nums.length - 1; i ++){
+            if(nums[i] == nums[i+1])
+                repeated =  true;
+        }
+        return repeated;
+    }
+}
